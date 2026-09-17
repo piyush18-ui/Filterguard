@@ -1,6 +1,6 @@
 # Multimodal Phishing & Social Engineering Detector
 
-Hackathon prototype for HackIndore 4.0 — Cybersecurity PS1.
+ prototype
 
 ## How it works
 
@@ -48,7 +48,7 @@ npm run dev
 
 Frontend will run at `http://localhost:5173`.
 
-## Demo script (for hackathon pitch)
+## Demo script 
 
 1. Click "Obvious phishing" sample → shows High Risk, High confidence,
    explains domain mismatch + urgency + OTP request.
@@ -79,12 +79,4 @@ phishing-detector/
     └── vite.config.js
 ```
 
-## Extending this for the full hackathon submission
 
-- Add more brands to `KNOWN_BRAND_DOMAINS` in `rules.py`
-- Add SMS/chat message support (the input schema already supports it —
-  just add a `channel` field and adjust prompt phrasing per channel)
-- Add a "batch analyze" mode for testing many messages against a labeled
-  dataset (precision/recall metrics look great in a PPT)
-- Add highlighting of the exact suspicious phrases/links within the message
-  text in the UI
